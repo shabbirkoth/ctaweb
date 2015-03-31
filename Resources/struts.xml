@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+ 
+<struts>
+    <constant name="struts.enable.DynamicMethodInvocation" value="true" />
+    <constant name="struts.devMode" value="true" />
+    <constant name="struts.custom.i18n.resources" value="ApplicationResources" />
+     <constant name="struts.configuration.xml.reload" value="true" />
+ 
+    <package name="default" extends="struts-default" namespace="/">
+        <action name="createuser"
+            class="com.cta.action.CreateUser">
+            <result name="success">../success.html</result>
+            <result name="error">../error.html</result>
+        </action>        
+    </package>
+</struts>
