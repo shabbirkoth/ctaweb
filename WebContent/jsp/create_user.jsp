@@ -14,7 +14,7 @@
 <%@include file="header.jsp" %>
 <main>
 
-	<s:form  action="createuser.action" class="register" method="post">
+	<form  action="createuser.action" class="register" method="post">
 		<fieldset class="row1">
                 <legend>User Details
                 </legend>
@@ -78,7 +78,7 @@
 			
 	</fieldset>
 
-	</s:form>
+	</form>
 
 </main>	
 <%@include file="navigation.jsp" %>
